@@ -5,7 +5,7 @@
 2. Come up with a concept for your application.
   ArcGIS offers users to ability to leverage raster imagery data from data extraction, preparation, visualization to analysis. On ArcGIS Pro, these imagery capabilities are inplemented as a set of raster functions, divided to various categories based on their application fields. Each raster function has a set of parameters and its associated required data type.
   For example, check out documentation on clip raster function (https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/clip-function.htm). 
-**  During each release of ArcGIS Pro, the parameters and its required data types could change. We need something like a web database app that tracks the development of raster function changes across different releases of Pros. **
+  **During each release of ArcGIS Pro, the parameters and its required data types could change. We need something like a web database app that tracks the development of raster function changes across different releases of Pros. **
    
 3. Identify all the relevant project stakeholders.
 
