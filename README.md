@@ -19,7 +19,7 @@
 4. Create an initial set of project requirements expressed as user stories. User stories must have estimates of completion times.
 
   a) (TE: one week) As a user, I want to have a database of all raster functions and their parameters in all the previous ArcGIS Pro releases
-  b) (TE: one week) As a user, I want to have a Function property Lookup page that offers a filtering and search capability that finds the specific function I want to look for
+  b) (TE: one week) As a user, I want to have a Function property Lookup page that offers a filtering and search capability that finds the specific function I look for
   c) (TE: one week) As a user, I want to have a Tool owner page that allows me to assign a raster function to a function owner (developer)  
   d) (TE: one week) As a user, I want to have a comparison page that generates the changes in between releases
 
