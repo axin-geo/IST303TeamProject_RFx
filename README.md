@@ -9,8 +9,8 @@
 
   For an example of an raster function, check out documentation on clip raster function (https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/clip-function.htm). 
 
-  **In each release of ArcGIS Pro, the parameters and its required data types might go through some tweaks here and there. 
-  We need something like a web database app that tracks the development of raster function changes across different releases of Pros. **
+  **In each release of ArcGIS Pro, the raster functions (along with their parameters and its required data types) might go through some tweaks here and there. 
+  We need something like a web database app that tracks the development of raster function changes across different releases of Pros. This web app also serves as a reference point for the development for function ownership and POC. **
    
 3. Identify all the relevant project stakeholders.
 
@@ -27,6 +27,9 @@
 # Notes
 
 All features
+  0. Data preparation
+    1. Create Bogus data for XML format file (ADRasterRegistry.xml) which contains the info about rfx.
+    2. creae a table that hold rfx owners on the page
 
   1. a database which stores all raster functions and their parameters in all the current ArcGIS Pro release
     - I want my dataset to have 3 tiers. 
