@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>RFX Owners</h2>
+    <table>
+        <tr>
+            <th>RFX Name</th>
+            <th>Owner Name</th>
+            <th>Email</th>
+            <th>Team</th>
+        </tr>
+        {% for rfx in rfx_owner_tbl %}
+        <tr>
+            <td>{{ rfx['rfx_name'] }}</td>
+            <td>{{ rfx['owner_name'] }}</td>
+            <td>{{ rfx['email'] }}</td>
+            <td>{{ rfx['team'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

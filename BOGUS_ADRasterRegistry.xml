@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArcGISRasterRegistry xmlns="http://xxxx/RasterRegistry">
+
+  <ArcGISRasterRamdonThings>
+
+  </ArcGISRasterRamdonThings>
+
+  <ArcGISRasterFunctions>
+
+    <rfxDefinitions>
+
+
+      <!--Clip-->
+      <rfxDefinition clsid="{aaaaaaaaaa-aaaaaa}" name="{Clip}" description="" rfxCategoryRefID="1" image="43423.png" helpContextID="2342342" 
+          tags="Team,{Raster},{Good}">
+        <rfxArgumentsInfo clsid="{bbbbbbbbbb-bbbbbbbb}">
+          <rfxArgumentInfo name="Raster" displayName="{Raster}" description="" required="true" rfxArgCategoryRefID="" hidden="false">
+            <dataType>raster</dataType>
+          </rfxArgumentInfo>
+          <rfxArgumentInfo name="ClippingType" displayName="{ClippingType}" description="" required="true" rfxArgCategoryRefID="" hidden="false">
+            <dataType>long</dataType>
+            <domain type="list" rfxEnumRefID="123567123" />
+            <defaultValue>1</defaultValue>
+          </rfxArgumentInfo>
+          <rfxArgumentInfo name="ClippingRaster" displayName="{Geometry1}" description="" required="false" rfxArgCategoryRefID="" hidden="false">
+            <dataType>raster</dataType>
+          </rfxArgumentInfo>
+          <rfxArgumentInfo name="ClippingGeometry" displayName="{Geometry2}" description="" required="false" rfxArgCategoryRefID="" hidden="false">
+            <dataType>geometry</dataType>
+          </rfxArgumentInfo>
+          <rfxArgumentInfo name="Extent" displayName="{Extent}" description="" required="true" rfxArgCategoryRefID="" hidden="false">
+            <dataType>extent</dataType>
+          </rfxArgumentInfo>
+        </rfxArgumentsInfo>
+        <rfxArgumentEditorOverrides active="true">
+          <rfxArgumentEditorInfo uri="clippingGeometryEditor" argumentNames="ClippingGeometry,ClippingRaster" displayName="{rfx_Geometry}" rfxArgCategoryRefID="" />
+        </rfxArgumentEditorOverrides>
+      </rfxDefinition>
+
+      <!--Plus-->
+      <rfxDefinition clsid="{jdshfsd-23424adf-you-did-a-good-job}" name="{Plus}" description="" rfxCategoryRefID="good" image="awesome.png" helpContextID="343432" 
+          tags="RGB,HSV,{color},{hue},{saturation}">
+        <rfxArgumentsInfo clsid="{keep-it-up}">
+          <rfxArgumentInfo name="Raster" displayName="{Raster}" description="" required="false" rfxArgCategoryRefID="" hidden="false">
+            <dataType>raster</dataType>
+          </rfxArgumentInfo>
+          <rfxArgumentInfo name="ConversionType" displayName="{Type}" description="" required="false" rfxArgCategoryRefID="" hidden="true">
+            <dataType>long</dataType>
+            <domain type="list" rfxEnumRefID="ColorTypes" />
+            <defaultValue>0</defaultValue>
+          </rfxArgumentInfo>
+        </rfxArgumentsInfo>
+      </rfxDefinition>
+
+      <!--DetectBrightOceanObject-->
+      <rfxDefinition clsid="{2847493244-34234}" name="{DetectBrightOceanObject}" description="" rfxCategoryRefID="ok-alright" image="thats-pretty-good.png" helpContextID="43243" 
+          tags="AAT,{aat},{rampage}">
+        <rfxArgumentsInfo clsid="{23423455235}">
+          <rfxArgumentInfo name="Raster" displayName="{Raster}" description="" required="true" rfxArgCategoryRefID="" hidden="false">
+            <dataType>raster</dataType>
+          </rfxArgumentInfo>
+          <rfxArgumentInfo name="veryrandom" displayName="{veryrandom}" description="" required="false" rfxArgCategoryRefID="" hidden="false">
+            <dataType>boolean</dataType>
+            <defaultValue>false</defaultValue>
+          </rfxArgumentInfo>
+        </rfxArgumentsInfo>
+      </rfxDefinition>
+
+    </rfxDefinitions>
+
+  </ArcGISRasterFunctions>
+
+  <ArcGISRasterMetadata>
+
+  </ArcGISRasterMetadata>
+
+</ArcGISRasterRegistry>

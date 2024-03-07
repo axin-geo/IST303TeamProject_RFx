@@ -46,7 +46,8 @@ out_name = "rfx_info\\rfx_info{0}_{1}_{2}.json".format(
 # Nested XML elements become nested JSON objects or arrays.
 
 # Define the path to your XML file
-xml_file_path = r'C:\Program Files\ArcGIS\Pro\bin\Extensions\DataSourcesRaster\ADRasterRegistry.xml'
+xml_file_path = r'C:\Users\aot12404\OneDrive - Esri\RFxSite\IST303TeamProject_RFx\BOGUS_ADRasterRegistry.xml'
+#r'C:\Program Files\ArcGIS\Pro\bin\Extensions\DataSourcesRaster\ADRasterRegistry.xml'
 
 # Define the output JSON file name
 json_file_path = out_name
