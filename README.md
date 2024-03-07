@@ -19,32 +19,40 @@
 4. Create an initial set of project requirements expressed as user stories. User stories must have estimates of completion times.
    User Journeys: Shaping the Next Gen of Raster Functionality!
   a) (TE: one week) As a user, I want to have a database of all raster functions and their parameters in all the previous ArcGIS Pro releases
-  b) (TE: one week) As a user, I want to have a Function property Lookup page that offers a filtering and search capability that finds the specific function I look for
-  c) (TE: one week) As a user, I want to have a Tool owner page that allows me to assign a raster function to a function owner (developer)  
-  d) (TE: one week) As a user, I want to have a comparison page that generates the changes in between releases
+  b) (TE: one week) As a user, I want to have a Tool owner page that allows me to assign a raster function to a function owner (developer)  
+  c) (TE: one week) As a user, n the rfx owner page, I want to be able to search and fileter based on rfx name, owner name. I want to be able to update/create owner, email and team info for raster functions.
+  d) (TE: two week) As a user, I want to be able to compare 2 releases ans see if there are functions, parameters added or removed from one version of the software.
 
    
 # Notes
 
 All features
-  0. Data preparation
-    1. Create Bogus data for XML format file (ADRasterRegistry.xml) which contains the info about rfx.
-    2. creae a table that hold rfx owners on the page
 
-  1. a database which stores all raster functions and their parameters in all the current ArcGIS Pro release
-    - I want my dataset to have 3 tiers. 
+ a) (TE: 1 week) As a user, I want to have a database of all raster functions and their parameters in all the previous ArcGIS Pro releases
+  1. create the index page
+  2. Retrieve rfx information (stored in xml) from installed ArcGIS Pro in a particular software version.
+  3. Convert the rfx info stored in xml to a json format
+  4. Create RFX info page via flask. User needs to input the rfx name and Pro version, and server can returns the rfx info based on the input criterion back to the client browser.
+  (- I want my dataset to have 3 tiers. 
         First tier, at the top is the database. 
         At the second tier is ArcGIS version (this could be 2.1, 2.2, 2.4, or the latest 3.1). 
         At the 3rd tier are the raster functions.
     - can use sql tables or json.
     - the concept of nested table does not exist in SQL. But could use foreign key.
-    - json might be the best way to store our data
-
-    Task 1.1 get rfx and their properties from a xml format data source
-
-    Task 1.2 write the rfx info to a json file. One json file corresponds to one version of ArcGIS software
+    - json might be the best way to store our data)
 
 
-  2. a Function property Lookup page that offers a filtering and search capability that finds the specific function I want to look for
+  b) (TE: one week) As a user, I want to have a Tool owner page that allows me to assign a raster function to a function owner (developer)  
+    1. create a SQL database with a table of columns rfx_id, owner, email, team
+    2. create the RFX owner page
+    3. The table uses the latest version of software to include all the rfxs up to date
 
-  3. A csv table that stores information about rfx_id, owner, email, team
+  c) (TE: one week) As a user, n the tool owner page, I want to be able to search and fileter based on rfx name, owner name. I want to be able to update/create owner, email and team info for raster functions.
+    1. Allow users to edit/update owner name, email and team
+    2. a filter box on top of table to filter rows based on keyboards
+
+  d) (TE: two  week) (TE: two week) As a user, I want to be able to compare 2 releases ans see if there are functions, parameters added or removed from one version of the software.
+    1. create a comparison route page
+    2. User needs to input the base Pro version, comparing Pro version. Server retreives the rfx info from the json files for requested versions. And do a comparison / diff. return results.
+
+   
