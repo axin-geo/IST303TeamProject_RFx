@@ -26,9 +26,9 @@
    
 # Notes
 
-All features
+All Tasks
 
- a) (TE: 1 week) As a user, I want to have a database of all raster functions and their parameters in all the previous ArcGIS Pro releases
+ a) (TE: first week) As a user, I want to have a database of all raster functions and their parameters in all the previous ArcGIS Pro releases
   1. create the index page
   2. Retrieve rfx information (stored in xml) from installed ArcGIS Pro in a particular software version.
   3. Convert the rfx info stored in xml to a json format
@@ -42,17 +42,22 @@ All features
     - json might be the best way to store our data)
 
 
-  b) (TE: one week) As a user, I want to have a Tool owner page that allows me to assign a raster function to a function owner (developer)  
-    1. create a SQL database with a table of columns rfx_id, owner, email, team
-    2. create the RFX owner page
-    3. The table uses the latest version of software to include all the rfxs up to date
+  b) (TE: second week) As a user, I want to have a Tool owner page that allows me to assign a raster function to a function owner (developer)  
+    5. create a SQL database with a table of columns rfx_id, owner, email, team
+    6. create the RFX owner page
+    7. The table uses the latest version of software to include all the rfxs up to date
 
-  c) (TE: one week) As a user, n the tool owner page, I want to be able to search and fileter based on rfx name, owner name. I want to be able to update/create owner, email and team info for raster functions.
-    1. Allow users to edit/update owner name, email and team
-    2. a filter box on top of table to filter rows based on keyboards
+  c) (TE: third week) As a user, n the tool owner page, I want to be able to search and fileter based on rfx name, owner name. I want to be able to update/create owner, email and team info for raster functions.
+    8. Allow users to edit/update owner name, email and team
+    9. a filter box on top of table to filter rows based on keyboards
 
-  d) (TE: two  week) (TE: two week) As a user, I want to be able to compare 2 releases ans see if there are functions, parameters added or removed from one version of the software.
-    1. create a comparison route page
-    2. User needs to input the base Pro version, comparing Pro version. Server retreives the rfx info from the json files for requested versions. And do a comparison / diff. return results.
+  d) (TE: fourth  week) (TE: two week) As a user, I want to be able to compare 2 releases ans see if there are functions, parameters added or removed from one version of the software.
+    10. create a comparison route page
+    11. User needs to input the base Pro version, comparing Pro version. Server retreives the rfx info from the json files for requested versions. And do a comparison / diff. return results.
+
+    13. create test plan
+    14. Add testing 
+
+   Burndown
 
    
