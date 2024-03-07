@@ -1,0 +1,143 @@
+{
+    "arcgis_version": {
+        "version": "3.3",
+        "productName": "ArcGISPro",
+        "buildNumber": "51289",
+        "buildDate": "2024-02-13",
+        "comment": ""
+    },
+    "rfx_definitions": [
+        {
+            "clsid": "{aaaaaaaaaa-aaaaaa}",
+            "name": "{Clip}",
+            "description": "",
+            "rfxCategoryRefID": "1",
+            "image": "43423.png",
+            "helpContextID": "2342342",
+            "tags": "Team,{Raster},{Good}",
+            "rfxArgumentsInfo": {
+                "clsid": "{bbbbbbbbbb-bbbbbbbb}",
+                "rfxArgumentInfo": [
+                    {
+                        "name": "Raster",
+                        "displayName": "{Raster}",
+                        "description": "",
+                        "required": "true",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "false",
+                        "dataType": "raster"
+                    },
+                    {
+                        "name": "ClippingType",
+                        "displayName": "{ClippingType}",
+                        "description": "",
+                        "required": "true",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "false",
+                        "dataType": "long",
+                        "domain": null,
+                        "defaultValue": "1"
+                    },
+                    {
+                        "name": "ClippingRaster",
+                        "displayName": "{Geometry1}",
+                        "description": "",
+                        "required": "false",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "false",
+                        "dataType": "raster"
+                    },
+                    {
+                        "name": "ClippingGeometry",
+                        "displayName": "{Geometry2}",
+                        "description": "",
+                        "required": "false",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "false",
+                        "dataType": "geometry"
+                    },
+                    {
+                        "name": "Extent",
+                        "displayName": "{Extent}",
+                        "description": "",
+                        "required": "true",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "false",
+                        "dataType": "extent"
+                    }
+                ]
+            },
+            "rfxArgumentEditorOverrides": {
+                "active": "true",
+                "rfxArgumentEditorInfo": null
+            }
+        },
+        {
+            "clsid": "{jdshfsd-23424adf-you-did-a-good-job}",
+            "name": "{Plus}",
+            "description": "",
+            "rfxCategoryRefID": "good",
+            "image": "awesome.png",
+            "helpContextID": "343432",
+            "tags": "RGB,HSV,{color},{hue},{saturation}",
+            "rfxArgumentsInfo": {
+                "clsid": "{keep-it-up}",
+                "rfxArgumentInfo": [
+                    {
+                        "name": "Raster",
+                        "displayName": "{Raster}",
+                        "description": "",
+                        "required": "false",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "false",
+                        "dataType": "raster"
+                    },
+                    {
+                        "name": "ConversionType",
+                        "displayName": "{Type}",
+                        "description": "",
+                        "required": "false",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "true",
+                        "dataType": "long",
+                        "domain": null,
+                        "defaultValue": "0"
+                    }
+                ]
+            }
+        },
+        {
+            "clsid": "{2847493244-34234}",
+            "name": "{DetectBrightOceanObject}",
+            "description": "",
+            "rfxCategoryRefID": "ok-alright",
+            "image": "thats-pretty-good.png",
+            "helpContextID": "43243",
+            "tags": "AAT,{aat},{rampage}",
+            "rfxArgumentsInfo": {
+                "clsid": "{23423455235}",
+                "rfxArgumentInfo": [
+                    {
+                        "name": "Raster",
+                        "displayName": "{Raster}",
+                        "description": "",
+                        "required": "true",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "false",
+                        "dataType": "raster"
+                    },
+                    {
+                        "name": "veryrandom",
+                        "displayName": "{veryrandom}",
+                        "description": "",
+                        "required": "false",
+                        "rfxArgCategoryRefID": "",
+                        "hidden": "false",
+                        "dataType": "boolean",
+                        "defaultValue": "false"
+                    }
+                ]
+            }
+        }
+    ]
+}
