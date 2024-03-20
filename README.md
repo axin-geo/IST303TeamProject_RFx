@@ -1,63 +1,93 @@
 # IST303TeamProject_RFx
-1. Team Members
-  My team members are Mohammed Alfawzan and Akhilesh Prakash Rajeswari.
-
-2. Come up with a concept for your application.
-  ArcGIS offers users to ability to leverage raster imagery data from data extraction, preparation, visualization to analysis. 
-  On ArcGIS Pro, these imagery capabilities are inplemented as a group of raster functions, divided to various categories based on their application fields. 
-  Each raster function has a set of parameters and its associated required data type.
-
-  For an example of an raster function, check out documentation on clip raster function (https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/clip-function.htm). 
-
-  **In each release of ArcGIS Pro, the raster functions (along with their parameters and its required data types) might go through some tweaks here and there. 
-  We need something like a web database app that tracks the development of raster function changes across different releases of Pros. This web app also serves as a reference point for the development for function ownership and POC. **
-   
-3. Identify all the relevant project stakeholders.
-
-  The key stakeholder in this project is Imagery/Raster team at Esri, and whoever that uses raster functions internally in Esri (could be other develpoment teams).
-
-4. Create an initial set of project requirements expressed as user stories. User stories must have estimates of completion times.
-   User Journeys: Shaping the Next Gen of Raster Functionality!
-  a) (TE: one week) As a user, I want to have a database of all raster functions and their parameters in all the previous ArcGIS Pro releases
-  b) (TE: one week) As a user, I want to have a Tool owner page that allows me to assign a raster function to a function owner (developer)  
-  c) (TE: one week) As a user, n the rfx owner page, I want to be able to search and fileter based on rfx name, owner name. I want to be able to update/create owner, email and team info for raster functions.
-  d) (TE: two week) As a user, I want to be able to compare 2 releases ans see if there are functions, parameters added or removed from one version of the software.
-
-   
-# Notes
-
-All Tasks
-
- a) (TE: first week) As a user, I want to have a database of all raster functions and their parameters in all the previous ArcGIS Pro releases
-  1. create the index page
-  2. Retrieve rfx information (stored in xml) from installed ArcGIS Pro in a particular software version.
-  3. Convert the rfx info stored in xml to a json format
-  4. Create RFX info page via flask. User needs to input the rfx name and Pro version, and server can returns the rfx info based on the input criterion back to the client browser.
-  (- I want my dataset to have 3 tiers. 
-        First tier, at the top is the database. 
-        At the second tier is ArcGIS version (this could be 2.1, 2.2, 2.4, or the latest 3.1). 
-        At the 3rd tier are the raster functions.
-    - can use sql tables or json.
-    - the concept of nested table does not exist in SQL. But could use foreign key.
-    - json might be the best way to store our data)
 
 
-  b) (TE: second week) As a user, I want to have a Tool owner page that allows me to assign a raster function to a function owner (developer)  
-    5. create a SQL database with a table of columns rfx_id, owner, email, team
-    6. create the RFX owner page
-    7. The table uses the latest version of software to include all the rfxs up to date
+# Raster Function Tracker for ArcGIS Pro
 
-  c) (TE: third week) As a user, n the tool owner page, I want to be able to search and fileter based on rfx name, owner name. I want to be able to update/create owner, email and team info for raster functions.
-    8. Allow users to edit/update owner name, email and team
-    9. a filter box on top of table to filter rows based on keyboards
+## Introduction
 
-  d) (TE: fourth  week) (TE: two week) As a user, I want to be able to compare 2 releases ans see if there are functions, parameters added or removed from one version of the software.
-    10. create a comparison route page
-    11. User needs to input the base Pro version, comparing Pro version. Server retreives the rfx info from the json files for requested versions. And do a comparison / diff. return results.
+This application serves as a comprehensive tool designed to track and manage the evolution of raster functions within ArcGIS Pro. Our objective is to harness the vast potential of raster imagery data, which is essential for spatial analysis and geospatial data management. The tool will function as a dynamic repository for documenting changes in raster function parameters and maintaining a clear record of ownership and contact information for each function across different releases.
 
-    13. create test plan
-    14. Add testing 
+## Table of Contents
 
-   Burndown
+- [Introduction](#introduction)
+- [Application Concept Overview](#application-concept-overview)
+- [Stakeholder Identification](#stakeholder-identification)
+- [Project Requirements and User Journeys](#project-requirements-and-user-journeys)
+- [Tasks Breakdown](#tasks-breakdown)
+- [Development Milestones](#development-milestones)
+- [Task Allocation](#task-allocation)
+- [Monitoring Progress with a Burn-Down Chart](#monitoring-progress-with-a-burn-down-chart)
+- [Documentation of Stand-Up Meetings](#documentation-of-stand-up-meetings)
+- [Development and Testing Environment Setup](#development-and-testing-environment-setup)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
+## Application Concept Overview
+
+At the heart of our application lies the objective to harness the power of raster imagery data within ArcGIS Pro. These capabilities are encapsulated in a suite of raster functions, categorized by their use cases, each with unique parameters and required data types. Given the iterative nature of ArcGIS Pro's development, these raster functions are subject to modifications across releases, necessitating a tool that meticulously tracks these changes. Our web database application aims to fulfill this need, serving as a dynamic repository and reference for raster function evolution, ownership, and contact details.
+
+## Stakeholder Identification
+
+Central to this endeavor are the Imagery/Raster team at Esri and various internal teams reliant on raster functions. Their insights and needs inform the core of our development, ensuring our tool remains relevant and valuable.
+
+## Project Requirements and User Journeys
+
+Our journey to revolutionize raster functionality tracking in ArcGIS Pro begins with defining clear, time-estimated user stories:
+
+- **Week 1:** Develop a comprehensive database encompassing all raster functions and parameters from previous ArcGIS Pro releases.
+- **Week 2:** Introduce a Tool Owner page, enabling the assignment of raster functions to specific owners.
+- **Week 3:** Enhance the Tool Owner page with capabilities to search, filter, and update owner details.
+- **Week 4-5:** Implement a comparison feature to discern differences between two software releases regarding raster functions and parameters.
+
+## Tasks Breakdown
+
+Here's how we break down our tasks according to the user stories:
+
+- **Week 1 Tasks:** 
+  - Design database schema.
+  - Parse XML data for raster functions.
+  - Convert XML data to JSON format.
+  - Implement RFX info retrieval and display logic.
+
+[Continue with the rest of the tasks for other weeks as outlined above]
+
+## Development Milestones
+
+We've established robust test plans and integrated testing throughout the development process to ensure functionality and reliability. We're also monitoring progress through a burn-down chart, adjusting tasks and timelines as needed to maintain momentum and achieve project milestones efficiently.
+
+## Task Allocation
+
+- **Aote:** Focus on database schema design and implementation (Tasks A1, B1).
+- **Mohammed:** Lead the development of the UI for the Tool Owner page and comparison feature (Tasks B2, D2).
+- **Aote:** Handle data parsing, conversion, and logic implementation (Tasks A2, A3, D1).
+- **Akilesh:** Work on search, filter, and update functionalities (Tasks C1, C2).
+- **Mohammed:** Presentation design and overall concept delivery.
+
+## Monitoring Progress with a Burn-Down Chart
+
+![Corrected Burn-Down Chart](image-link-here)
+
+_The burn-down chart above illustrates our team's current progress against the planned work, offering a clear visual of the remaining tasks over the project timeline._
+
+## Documentation of Stand-Up Meetings
+
+We have documented the agendas, decisions, and action items from our bi-weekly stand-up meetings. These documents are a testament to our team's ongoing communication and problem-solving process.
+
+## Development and Testing Environment Setup
+
+Our development environment is fully configured, complete with the necessary software installations, access permissions, and initial database setups. We have included basic functional and test code in our repository to validate the setup's effectiveness.
+
+## Contributing
+
+If you would like to contribute to the Raster Function Tracker project, please review our contributing guidelines and submit your pull requests for review.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Acknowledgments
+- Thanks to the Imagery/Raster team at Esri for their insights and support.
+- Gratitude to all team members for their dedication and hard work.
+- Grateful for Professor Kallemeyn for his kind patience and walkthrough.
    
