@@ -128,7 +128,7 @@ If you would like to contribute to the Raster Function Tracker project, please r
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under...
 
 ## Acknowledgments
 - Thanks to the Imagery/Raster team at Esri for their insights and support.
