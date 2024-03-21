@@ -110,7 +110,7 @@ Total days of work: 15 days (adjusting for continued learning and increased effi
 
 ## Monitoring Progress with a Burn-Down Chart
 
-![Corrected Burn-Down Chart](image-link-here)
+<img width="542" alt="image" src="https://github.com/axin-geo/IST303TeamProject_RFx/assets/157668023/75c09302-1e58-49b6-9156-0c4516dbdb59">
 
 _The burn-down chart above illustrates our team's current progress against the planned work, offering a clear visual of the remaining tasks over the project timeline._
 
