@@ -127,8 +127,7 @@ Our development environment is fully configured, complete with the necessary sof
 If you would like to contribute to the Raster Function Tracker project, please review our contributing guidelines and submit your pull requests for review.
 
 ## License
-
-This project is licensed under...
+TBA
 
 ## Acknowledgments
 - Thanks to the Imagery/Raster team at Esri for their insights and support.
