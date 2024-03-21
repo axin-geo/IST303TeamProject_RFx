@@ -1,6 +1,5 @@
 # IST303TeamProject_RFx
 
-
 # Raster Function Tracker for ArcGIS Pro
 
 ## Introduction
@@ -50,11 +49,56 @@ Here's how we break down our tasks according to the user stories:
   - Convert XML data to JSON format.
   - Implement RFX info retrieval and display logic.
 
-[Continue with the rest of the tasks for other weeks as outlined above]
+- **Week 2 Tasks:**
+- Shift efforts towards creating a SQL database for tracking raster function ownership, alongside developing the user interface for the RFX owner page.
+
+- **Week 3 Tasks:**
+- Implement functionality for editing owner details and introduce a filtering feature to streamline searches on the Tool Owner page.
+
+- **Week 4-5 Tasks:**
+- Design and develop a comparison route page that facilitates the analysis of raster function changes between different ArcGIS Pro versions.
 
 ## Development Milestones
 
-We've established robust test plans and integrated testing throughout the development process to ensure functionality and reliability. We're also monitoring progress through a burn-down chart, adjusting tasks and timelines as needed to maintain momentum and achieve project milestones efficiently.
+We've established robust test plans and integrated testing throughout the development process to ensure functionality and reliability. We're also monitoring progress through a burn-down chart, adjusting tasks and timelines as needed to maintain momentum and achieve project milestones efficiently. By focusing on these structured tasks and adhering to our estimated timelines, we position ourselves to create a tool that not only tracks the evolution of raster functions within ArcGIS Pro but also enhances collaboration and transparency among stakeholders.
+
+## Decomposing User Stories Into Tasks:
+User Story A (Week 1): Create a database of all raster functions and their parameters in all previous ArcGIS Pro releases.
+
+Task A1: Design database schema.
+Task A2: Parse XML data for raster functions.
+Task A3: Convert XML data to JSON format.
+Task A4: Implement RFX info retrieval and display logic.
+User Story B (Week 2): Develop a Tool Owner page for raster function assignment.
+
+Task B1: Create SQL database schema for owner information.
+Task B2: Develop the UI for the RFX owner page.
+Task B3: Implement logic for assigning raster functions to owners.
+User Story C (Week 3): Enhance the Tool Owner page with search, filter, and update capabilities.
+
+Task C1: Implement search and filter functionality.
+Task C2: Develop UI elements for editing owner details.
+Task C3: Test search, filter, and update features for functionality and usability.
+User Story D (Week 4-5): Enable comparison of raster function changes between releases.
+
+Task D1: Design comparison logic.
+Task D2: Develop UI for comparison results.
+Task D3: Test comparison feature for accuracy and effectiveness.
+2. Milestone 1.0 Features:
+Milestone 1.0 will focus on establishing the foundational components of the application:
+
+A database containing information on raster functions and parameters.
+The initial version of the Tool Owner page with basic functionality.
+Basic search and filter capabilities on the Tool Owner page.
+3. Building Iterations for Milestone 1.0:
+Iteration 1 (Weeks 1-2):
+
+Complete tasks for User Story A and start User Story B.
+Total days of work: 10 days (accounting for an 80% velocity due to initial ramp-up and coordination).
+Iteration 2 (Weeks 3-5):
+
+Complete tasks for User Stories B (remaining), C, and D.
+Total days of work: 15 days (adjusting for continued learning and increased efficiency).
 
 ## Task Allocation
 
