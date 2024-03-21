@@ -44,19 +44,19 @@ Our journey to revolutionize raster functionality tracking in ArcGIS Pro begins 
 Here's how we break down our tasks according to the user stories:
 
 - **Week 1 Tasks:** 
-- Design database schema.
-- Parse XML data for raster functions.
-- Convert XML data to JSON format.
-- Implement RFX info retrieval and display logic.
+  -- Design database schema.
+  -- Parse XML data for raster functions.
+  -- Convert XML data to JSON format.
+  -- Implement RFX info retrieval and display logic.
 
 - **Week 2 Tasks:**
-- Shift efforts towards creating a SQL database for tracking raster function ownership, alongside developing the user interface for the RFX owner page.
+  -- Shift efforts towards creating a SQL database for tracking raster function ownership, alongside developing the user interface for the RFX owner page.
 
 - **Week 3 Tasks:**
-- Implement functionality for editing owner details and introduce a filtering feature to streamline searches on the Tool Owner page.
+  -- Implement functionality for editing owner details and introduce a filtering feature to streamline searches on the Tool Owner page.
 
 - **Week 4-5 Tasks:**
-- Design and develop a comparison route page that facilitates the analysis of raster function changes between different ArcGIS Pro versions.
+  -- Design and develop a comparison route page that facilitates the analysis of raster function changes between different ArcGIS Pro versions.
 
 ## Development Milestones
 
